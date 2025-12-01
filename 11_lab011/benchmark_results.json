@@ -1,0 +1,279 @@
+{
+  "timestamp": "2025-12-01T09:57:27.282917",
+  "system_info": {
+    "os": "Windows 10",
+    "processor": "Intel64 Family 6 Model 165 Stepping 2, GenuineIntel",
+    "ram_gb": 15.827503204345703,
+    "cpu_count": 8
+  },
+  "benchmarks": {
+    "Случайная строка (малый алфавит)": {
+      "KMP": {
+        "total_time": 0.018808800000442716,
+        "time_per_iteration": 0.0018808800000442716,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Z-function": {
+        "total_time": 0.030276700000285928,
+        "time_per_iteration": 0.0030276700000285927,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Boyer-Moore": {
+        "total_time": 0.022299600000224018,
+        "time_per_iteration": 0.002229960000022402,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Rabin-Karp": {
+        "total_time": 0.0570542999994359,
+        "time_per_iteration": 0.0057054299999435894,
+        "iterations": 10,
+        "matches_count": 0
+      }
+    },
+    "Случайная строка (большой алфавит)": {
+      "KMP": {
+        "total_time": 0.009660499999881722,
+        "time_per_iteration": 0.0009660499999881722,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Z-function": {
+        "total_time": 0.025139999999737483,
+        "time_per_iteration": 0.002513999999973748,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Boyer-Moore": {
+        "total_time": 0.005709799999749521,
+        "time_per_iteration": 0.0005709799999749521,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Rabin-Karp": {
+        "total_time": 0.058076100000107544,
+        "time_per_iteration": 0.005807610000010755,
+        "iterations": 10,
+        "matches_count": 0
+      }
+    },
+    "Периодическая строка": {
+      "KMP": {
+        "total_time": 0.01721469999938563,
+        "time_per_iteration": 0.001721469999938563,
+        "iterations": 10,
+        "matches_count": 2999
+      },
+      "Z-function": {
+        "total_time": 0.03398939999988215,
+        "time_per_iteration": 0.003398939999988215,
+        "iterations": 10,
+        "matches_count": 2999
+      },
+      "Boyer-Moore": {
+        "total_time": 0.04112260000056267,
+        "time_per_iteration": 0.004112260000056267,
+        "iterations": 10,
+        "matches_count": 2999
+      },
+      "Rabin-Karp": {
+        "total_time": 0.09886100000039733,
+        "time_per_iteration": 0.009886100000039732,
+        "iterations": 10,
+        "matches_count": 2999
+      }
+    },
+    "Строка с повторениями": {
+      "KMP": {
+        "total_time": 0.02993759999935719,
+        "time_per_iteration": 0.0029937599999357188,
+        "iterations": 10,
+        "matches_count": 9998
+      },
+      "Z-function": {
+        "total_time": 0.0568461999991996,
+        "time_per_iteration": 0.0056846199999199595,
+        "iterations": 10,
+        "matches_count": 9998
+      },
+      "Boyer-Moore": {
+        "total_time": 0.052247100000386126,
+        "time_per_iteration": 0.005224710000038613,
+        "iterations": 10,
+        "matches_count": 9998
+      },
+      "Rabin-Karp": {
+        "total_time": 0.05012929999975313,
+        "time_per_iteration": 0.005012929999975313,
+        "iterations": 10,
+        "matches_count": 9998
+      }
+    },
+    "Худший случай (нет совпадений)": {
+      "KMP": {
+        "total_time": 0.009407499999724678,
+        "time_per_iteration": 0.0009407499999724677,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Z-function": {
+        "total_time": 0.02418390000002546,
+        "time_per_iteration": 0.002418390000002546,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Boyer-Moore": {
+        "total_time": 0.014984699999331497,
+        "time_per_iteration": 0.0014984699999331496,
+        "iterations": 10,
+        "matches_count": 0
+      },
+      "Rabin-Karp": {
+        "total_time": 0.028676500000074157,
+        "time_per_iteration": 0.0028676500000074157,
+        "iterations": 10,
+        "matches_count": 0
+      }
+    }
+  },
+  "scalability": {
+    "1000": {
+      "KMP": 122.09999931656057,
+      "Z-function": 233.4000000701053,
+      "Rabin-Karp": 488.90000016399426
+    },
+    "5000": {
+      "KMP": 613.100000009581,
+      "Z-function": 1155.3000003914349,
+      "Rabin-Karp": 2429.7999998452724
+    },
+    "10000": {
+      "KMP": 1142.2999996284489,
+      "Z-function": 2285.1000003356603,
+      "Rabin-Karp": 5151.400000613648
+    },
+    "50000": {
+      "KMP": 5795.999999463675,
+      "Z-function": 12303.400000746478,
+      "Rabin-Karp": 25266.300000112096
+    },
+    "100000": {
+      "KMP": 11824.399999568413,
+      "Z-function": 26833.999999325897,
+      "Rabin-Karp": 58563.09999944642
+    }
+  },
+  "worst_case": {
+    "Паттерн в начале": {
+      "KMP": {
+        "time_us": 936.6000003865338,
+        "matches": 70
+      },
+      "Z-function": {
+        "time_us": 2273.2999996151193,
+        "matches": 70
+      },
+      "Boyer-Moore": {
+        "time_us": 1295.4000003446708,
+        "matches": 70
+      },
+      "Rabin-Karp": {
+        "time_us": 2282.1000002295477,
+        "matches": 70
+      }
+    },
+    "Паттерн в конце": {
+      "KMP": {
+        "time_us": 1060.9000000840751,
+        "matches": 77
+      },
+      "Z-function": {
+        "time_us": 1278.3000001945766,
+        "matches": 77
+      },
+      "Boyer-Moore": {
+        "time_us": 1278.200000342622,
+        "matches": 77
+      },
+      "Rabin-Karp": {
+        "time_us": 1747.399999658228,
+        "matches": 77
+      }
+    },
+    "Паттерн не найден": {
+      "KMP": {
+        "time_us": 924.0999997928157,
+        "matches": 0
+      },
+      "Z-function": {
+        "time_us": 1180.400000521331,
+        "matches": 0
+      },
+      "Boyer-Moore": {
+        "time_us": 842.1000002272194,
+        "matches": 0
+      },
+      "Rabin-Karp": {
+        "time_us": 1378.7000007141614,
+        "matches": 0
+      }
+    },
+    "Много ложных совпадений": {
+      "KMP": {
+        "time_us": 867.9000002302928,
+        "matches": 0
+      },
+      "Z-function": {
+        "time_us": 1582.800000505813,
+        "matches": 0
+      },
+      "Boyer-Moore": {
+        "time_us": 746.2000003215508,
+        "matches": 0
+      },
+      "Rabin-Karp": {
+        "time_us": 2983.20000001695,
+        "matches": 0
+      }
+    }
+  },
+  "pattern_size_influence": {
+    "1": {
+      "KMP": 11761.899999328307,
+      "Z-function": 21354.20000013255,
+      "Rabin-Karp": 18352.500000219152
+    },
+    "3": {
+      "KMP": 8012.500000404543,
+      "Z-function": 20970.100000340608,
+      "Rabin-Karp": 31952.199999977893
+    },
+    "5": {
+      "KMP": 11428.300000261515,
+      "Z-function": 20740.5999999537,
+      "Rabin-Karp": 46387.500000491855
+    },
+    "10": {
+      "KMP": 10614.300000270305,
+      "Z-function": 21703.80000006844,
+      "Rabin-Karp": 50874.00000047637
+    },
+    "20": {
+      "KMP": 7770.000000164146,
+      "Z-function": 19299.8999991687,
+      "Rabin-Karp": 34970.59999972407
+    },
+    "50": {
+      "KMP": 7537.100000263308,
+      "Z-function": 16972.000000350818,
+      "Rabin-Karp": 34768.000000440225
+    },
+    "100": {
+      "KMP": 6943.499999579217,
+      "Z-function": 13536.800000110816,
+      "Rabin-Karp": 31423.800000084157
+    }
+  }
+}
