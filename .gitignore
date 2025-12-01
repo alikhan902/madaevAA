@@ -1,6 +1,11 @@
 # Виртуальное окружение
-.venv/
 venv/
+*/venv/
+*/**/venv/
+.env/
+.venv/
+ENV/
+./04_lab004/vevn/
 
 # IDE и редакторы
 .vscode/
